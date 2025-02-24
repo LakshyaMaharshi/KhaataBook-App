@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+    <title>Create Hisaab</title>
 </head>
-<body>
-    <div class="container">
-        <div class="nav">
-            <h1>Khaatabook</h1>
-            <a href="/">Home</a>
+<body class="bg-gray-100 text-gray-800">
+    <div class="container mx-auto p-6">
+        <div class="nav flex justify-between items-center bg-blue-600 text-white p-4 rounded-md shadow-md">
+            <h1 class="text-2xl font-bold">Khaatabook</h1>
+            <a href="/" class="bg-white text-blue-600 px-4 py-2 rounded-md hover:bg-blue-200">Home</a>
         </div>    
 
-        <h3>Create New Hisaab</h3>
-        <form action="/create" method="post">
-            <input type="text" placeholder="Hisaab Title (eg. Shopping Hisaab, Dost Ka Hisaab)" name="title" ><br>
-            <input type="text" placeholder="Hisaab Discription (eg. Dost Ko 1000 deye!)" name="discription" ><br>
-            <input type="submit" value="Create">
+        <h3 class="text-xl font-semibold mt-8 mb-4">Create New Hisaab</h3>
+        <form action="/create" method="post" class="bg-white p-6 rounded-md shadow-md">
+            <input type="text" placeholder="Hisaab Title (eg. Shopping Hisaab, Dost Ka Hisaab)" name="title" class="w-full p-2 mb-4 border rounded-md" required>
+            <input type="text" placeholder="Hisaab Description (eg. Dost Ko 1000 deye!)" name="description" class="w-full p-2 mb-4 border rounded-md" required>
+            <input type="submit" value="Create" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 cursor-pointer">
         </form>
     </div>
 </body>
