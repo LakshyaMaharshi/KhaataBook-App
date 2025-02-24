@@ -1,5 +1,5 @@
 # KhaataBook-App
-
+***fun project created in **3 hours** for practise ***
 KhaataBook-App is a simple web application for managing personal or business accounts (hisaab). It allows users to create, view, edit, and delete records of transactions.
 
 ## Features
