@@ -39,8 +39,8 @@ app.get('/hisaab/:filename',(req,res)=>{
 })
 
 app.post('/create', (req,res)=>{
-    let {title,discription} = req.body;
-    fs.writeFile(path.join(__dirname,'files',`${title.replace(/\s+/g, '_')}.txt`),`${discription}`, (err)=>{
+    let {title,description} = req.body;
+    fs.writeFile(path.join(__dirname,'files',`${title.replace(/\s+/g, '_')}.txt`),`${description}`, (err)=>{
         if(err) throw err;
         console.log("file created!");
     })
